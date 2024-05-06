@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="w-screen h-screen flex justify-center items-center bg-slate-200">
+    <div class="webpage">
+      <div class="form w-fit bg-white rounded-xl p-3">
+        <p class="p-2 text-xl text-zinc-600">Login to Website</p>
+        <div class="flex">
+          <div class="username flex flex-col justify-evenly gap-3">
+            <label for="Email">Email</label>
+            <label for="Password">Password</label>
+          </div>
+          <div class="password flex flex-col justify-evenly gap-3 p-3">
+            <input
+              id="Email"
+              type="email"
+              class="border border-zinc-600 p-2 rounded-md"
+            />
+            <input
+              id="Passward"
+              type="password"
+              class="border border-zinc-600 p-2 rounded-md"
+            />
+          </div>
+        </div>
+        <div class="flex justify-between items-center p-2">
+          <button
+            class="sign-in w-36 m-1 p-2 rounded-full bg-violet-500 active:bg-violet-600 hover:bg-violet-400 focus:ring-2 focus:ring-violet-300 text-white"
+          >
+            Sign in
+          </button>
+          <button
+            class="sign-up w-36 m-1 p-2 rounded-full bg-white text-violet-600 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300"
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
